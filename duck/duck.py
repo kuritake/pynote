@@ -1,4 +1,4 @@
-#duck typing(メインルーチン処理手順)
+#duck typing(proccess procedure of main routine.)
 def say(kenousuihito):
     kenousuihito.confess()
     
