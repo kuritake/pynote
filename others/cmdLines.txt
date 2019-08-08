@@ -1,0 +1,8 @@
+These cmdLines brlow are my reminders thet is often used in my worktimes.
+
+・You can't install any python library via 'pip' because of proxyserver problems.
+  pip install selenium --proxy proxyservername.co.jp:8080
+ 
+・You can't create virtual enviroment using 'venv' on Windows.
+  python -m venv [name]
+
