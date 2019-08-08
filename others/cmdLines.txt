@@ -1,4 +1,4 @@
-These cmdLines brlow are my reminders thet is often used in my worktimes.
+These cmdLines brlow are my reminders thet is often used in my workplaces.
 
 ・You can't install any python library via 'pip' because of proxyserver problems.
   pip install selenium --proxy proxyservername.co.jp:8080
