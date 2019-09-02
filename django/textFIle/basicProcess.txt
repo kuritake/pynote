@@ -1,0 +1,29 @@
+マジで基本的なdjangoの起動までのプロセス※Windowsの場合
+
+0.任意のフォルダを作成
+
+1.作成フォルダ内に仮想環境を構築
+ python3 -m venv djangobros_venv (djangobros_venvのところが仮想環境名になる)
+
+2．cd して仮想環境の「Script」　ディレクトリで「activate」コマンドを実行
+
+3．djangoをインストール
+　pip install django --proxy proxy.mei.co.jp:8080 (--proxy 以下はプロキシサーバを経由しないと落とせない時に使う)
+
+4.プロジェクト作成
+　django-admin startproject django_blog　(django_blogのところがプロジェクト名になる)
+ 
+5.「setting.py」を開いて各種設定変更
+　LANGUAGE_CODE = 'ja-JP'
+　TIME_ZONE = 'Asia/Tokyo'
+
+6.「setting.py」に静的ファイル（css用）のパスも追加する。
+  STATIC_URL = '/static/'
+　STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+7.デプロイ時に使用するホストネームを指定する
+　※まだできてません
+
+8.ユーザ作成等に必要なDBをマイグレーションする
+ python manage.py migrate
+
