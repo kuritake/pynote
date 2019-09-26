@@ -1,0 +1,13 @@
+This code is enable you add a button on your webpage.
+
+You select any code and get ’JS path’ beforehand.
+Then your PC's clipboard has a string that starts from "document.queryselector('your selected path')"
+
+like this below,
+"document.querySelector('#LST_TYOHYO_KANRI > tbody:nth-child(3) > tr:nth-child(1) > td:nth-child(1)')
+
+you add this code below
+
+"document.querySelector('some path').insertAdjacentHTML('afterbegin', '<button id =myID>PUSH</button>');"
+If this code is actibvated,a button is appeared on page 
+
