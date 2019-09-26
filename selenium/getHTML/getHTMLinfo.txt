@@ -1,0 +1,11 @@
+You can get HTML resource from a webpage by selenium function.
+
+you easily specify source point by means of "selector" by chrome option.
+
+elemlist = driver.find_elements_by_css_selector('your sourcre')
+    #elemlist's type is <list>.so you can get info be means of iter function.like 'for method'.
+    for elm in elemlist:
+        print(elm.get_attribute('innerHTML'))
+
+BTW,currently selenium can manupilate 'span' tag.
+driver.find_element_by_xpath('//*[@id="LST_TYOHYO_KANRI"]/tbody[1]/tr[1]/td[1]/label/span').click()
